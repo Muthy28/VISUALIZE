@@ -1,0 +1,379 @@
+
+/* CSS */
+body{
+    margin: 0;
+}
+.menu {
+    background-color: #0f4c75;
+    color: black;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.menu-ul li {
+    display: inline-block;
+}
+
+.menu-ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.design {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-gap: 15px;
+}
+
+.design img {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio and fill container */
+    transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.design img:hover {
+    transform: scale(1.1); /* Scale up by 10% on hover */
+}
+
+.more-designs-btn {
+    background: transparent;
+    border: 2px solid #0f4c75;
+    color: #0f4c75;
+    font-weight: 300;
+    padding: 10px;
+    margin: 10px;
+    letter-spacing: 2px;
+}
+
+.more-designs-btn:hover {
+    background: #0f4c75;
+    color: white;
+    transition: all 0.5s;
+}
+.image-container {
+    position: relative; /* Position relative for absolute positioning */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.image-container .info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Add transition for smooth effect */
+}
+
+.image-container:hover .info {
+    opacity: 1; /* Show info on hover */
+}
+a{
+    font-size:20px;
+    border-bottom: 1px solid transparent;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:red;
+    border-bottom: 1px solid white;
+}
+
+.sticky{
+    background: #0f4c75;
+    position:fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.sticky ul{
+    padding: 0;
+    margin: 10px;
+}
+
+.page-title{
+    text-align:center ;
+    font-size: 50px;
+    padding: 200px;
+    color: white;
+    letter-spacing: 10px;
+    text-shadow: 0 0 5px #0f4c75;
+}
+
+.description, .title{
+    font-variant: small-caps;
+    font-size: 30px;
+    margin: 20px;
+}
+.top-background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.page-blocks{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title{
+  letter-spacing: 10px;  
+  color: #0f4c75;
+}
+
+.design {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-gap: 15px;
+  }
+  
+  .design img {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio and fill container */
+  }
+.more-designs-btn{
+    background: transparent;
+    border: 2px solid #0f4c75;
+    color: #0f4c75;
+    font-weight: 300;
+    padding: 10px;
+    margin: 10px;
+    letter-spacing: 2px;
+}  
+.more-designs-btn:hover{
+    background: #0f4c75;
+    color: white;
+    transition:all 0.5s ;
+
+}
+/* Adjustments for Appointment block */
+.flex-block {
+    display: flex;
+    justify-content: space-around; /* Align items horizontally with space around them */
+}
+
+.appointment-flex-item {
+    width: 45%; /* Adjust width of each item */
+}
+
+.appointment-img {
+    background-image: url('image 10.jpg');
+    height: 450px; /* Set a fixed height */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; /* Position relative for absolute positioning */
+}
+
+.appointment-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 80%; /* Adjust width as needed */
+}
+
+.appointment-form {
+    padding: 20px;
+    width: 100%; /* Set form width to fill container */
+}
+
+.appointment-form input,
+.appointment-form textarea {
+    width: calc(100% - 20px); /* Adjust width to fill container minus padding */
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    text-align: center;
+    color: #0f4c75;
+    font-size: 16px;
+}
+
+.appointment-btn {
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    padding: 15px;
+    outline: none;
+    width: 100%; /* Set button width to fill container */
+}
+
+.appointment-btn:hover {
+    background: white;
+    color: #0f4c75;  
+}
+
+.flex-block{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+overflow: hidden;
+}
+  
+.why-us-flex-item{
+    background: #0f4c75;
+    color: white;
+    width: 20%;
+    padding: 40px;
+    margin: 20px;
+}
+
+.block-label{
+font-variant: small-caps;
+font-size: 20px;
+margin-bottom: 20px;
+letter-spacing: 5px;
+}
+
+.block-description{
+text-align: justify;
+}
+.block-number{
+  font-weight: bold;  
+  font-size: 50px;
+  padding: 20px;
+}
+/* Add transition for smooth scaling */
+.why-us-flex-item {
+    background: #0f4c75;
+    color: white;
+    width: 20%;
+    padding: 40px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Scale up by 10% on hover */
+.why-us-flex-item:hover {
+    transform: scale(1.1);
+}
+.appointment-flex-item {
+    background: #0f4c75;
+    color: white;
+    width: 45%;
+    padding: 0;
+    margin: 20px;
+    overflow: hidden;
+    display: inline-block; /* Change display to inline-block */
+    vertical-align: top; /* Align the top of the elements */
+}
+
+.appointment-img {
+    background-image: url('image 10.jpg');
+    height: 450px; /* Set a fixed height */
+}
+
+.appointment-text {
+    padding: 100px 20px; /* Adjust padding */
+    font-size: 30px; /* Adjust font size */
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.appointment-form {
+    padding: 20px;
+    text-align: center; /* Center the form elements */
+}
+
+.appointment-form input, textarea{
+    width: 60%;
+    max-width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    text-align: center;
+    color: #0f4c75;
+    font-size: 16px;
+}
+
+.appointment-form textarea{
+  height: 100px;  
+  max-height: 100px;
+  max-width: 60%;
+  overflow-y: scroll;
+}
+
+.appointment-btn{
+border: 2px solid white;
+background: transparent;
+color: white;
+padding: 15px;
+outline: none;
+}
+.appointment-btn:hover{
+    background: white;
+    color: #0f4c75;  
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+}
+
+.locations {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: auto;
+    text-align: center;
+}
+
+.locations:not(:last-child) {
+    margin-right: 20px; /* Add margin between footer items */
+}
+
+.address {
+    font-weight: lighter;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.social-media-icons {
+    color: white;
+    font-size: 30px;
+    display: flex; /* Ensure social media icons are displayed in one line */
+}
+
+.social-media-icons i {
+    margin-right: 10px; /* Add margin between social media icons */
+}
+
+.copyrights{
+    font-size: 16px;
+    text-align: center;
+    margin: 12px;
+}
